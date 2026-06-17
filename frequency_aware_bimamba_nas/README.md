@@ -75,9 +75,6 @@ results/best_arch_alpha.pth
 results/best_arch_beta.pth
 results/best_arch_gamma.pth
 ```
-
-The search protocol is a fixed subject-level train/validation split. This is not nested LOSO.
-
 ## LOSO evaluation
 
 ```bash
@@ -101,8 +98,6 @@ The provided implementation separates architecture search and final LOSO evaluat
 
 1. Search: fixed subject-level training/validation split.
 2. Evaluation: LOSO final evaluation with per-fold validation subjects drawn only from the training subjects.
-
-When describing this code in a paper, do not describe the architecture search stage as nested LOSO unless you modify the code accordingly.
 
 ## Reproducibility notes
 
