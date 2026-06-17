@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+title: Frequency-Aware NAS with Bidirectional Mamba for EEG Emotion Recognition
+message: If you use this code, please cite the corresponding paper.
+authors:
+  - family-names: Zhang
+    given-names: Rongye

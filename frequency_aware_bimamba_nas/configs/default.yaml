@@ -1,0 +1,26 @@
+# Default experiment settings used by the provided scripts.
+seed: 42
+bands: [theta, alpha, beta, gamma]
+batch_size: 32
+search:
+  num_steps: 50
+  epochs: 80
+  patience: 15
+  split: fixed_subject_level_train_validation_split
+  train_subjects: 16
+  validation_subjects: 16
+evaluation:
+  protocol: LOSO
+  max_epochs: 150
+  patience: 30
+  validation_fraction_from_training_subjects: 0.2
+  selection_metric: val_acc
+model:
+  input_dim: 32
+  num_classes: 2
+  fusion_mode: multihead
+  num_heads: 8
+loss:
+  name: focal
+  alpha: 0.45
+  gamma: 3.0

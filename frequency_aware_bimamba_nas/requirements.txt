@@ -1,0 +1,6 @@
+numpy
+scipy
+scikit-learn
+torch
+mamba-ssm
+causal-conv1d
